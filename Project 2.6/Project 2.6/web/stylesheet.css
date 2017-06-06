@@ -1,0 +1,63 @@
+html{
+    background-color: aliceblue;
+}
+
+#header{
+    color: #CC1023;
+    text-align: center;
+    border: 22px solid cadetblue;  
+}
+
+#logo{
+    float: right;
+    position: absolute;
+    right: 20px;
+    height: 30px;
+    top: -10px;
+}
+
+#inhoud{
+    border: 4px solid cadetblue;
+    color: #CC1023;
+}
+
+#inhoudtitel{
+    text-align: left;
+}
+
+table{
+    table-layout: fixed;
+    width: 800px;
+    height: 400px;
+    text-align: left;
+    margin-left: 20px;
+    border: 0px;
+    color: cadetblue;
+}
+
+p{display: inline-block}
+
+textarea:focus {
+background: lightgray;
+}
+
+input:focus {
+background: lightgray;
+}
+
+.foutmelding{
+    color: indianred;
+}
+.correct{
+    background: lightgreen;
+}
+
+.incorrect{background: indianred;
+}
+
+#opslaan{
+    margin-left: 20px;
+}
+#einde{
+    color: #CC1023;
+}

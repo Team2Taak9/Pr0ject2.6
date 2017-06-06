@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/Project 2.6">
+  <Resource auth="Container" 
+            driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
+            logAbandoned="true" 
+            maxActive="8"
+            maxIdle="4"
+            name="jdbc/Oogheelkunde" 
+            password="r9&_P7am51$rBW#sT64"
+            removeAbandoned="true" 
+            removeAbandonedTimeout="60"
+            type="javax.sql.DataSource"
+            url="jdbc:sqlserver://ms-sql-1044" 
+            username="app_Oogheelkunde"/>
+</Context>

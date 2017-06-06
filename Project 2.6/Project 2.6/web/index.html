@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link type="text/css" rel="stylesheet" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--<script src = "http://ajax.googleapis.com/ajas/lis/jquery/1.11.2/jquery.min.js"></script>--->
+        <script src = "http://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+        <script type = "text/javascript" src="logica.js"></script>
+        <title>Cataract enquêteformulier</title>
+    </head>
+    <body>
+        <div id = "header"><h1>Oogheelkunde-Patienten</h1></div>
+            <p id= "logo"><img src="http://www.vmca.nl/dynamic/image/afbeeldingen/amc-doorzichtig.png"/></p>
+             
+        <div id="inhoud">
+            <p id="inhoudtitel"><h2>Patientgegevens</h2></p>
+        <form id ="formulier" method="post" action="addpatientservlet">
+        <table>
+            <tr>
+                <td><p><h4>Patientnummer</h4><input id= "patientnummer" name="patientnr" type="text" placeholder="12345678"></input></p>
+                </td>
+                <td><p><h4>Geslacht</h4><input  id = "man" type="radio" value = "Man" name = "geslacht">Man</input>
+                <input id = "vrouw" type = "radio" value = "Vrouw" name = "geslacht">Vrouw</input></p></td>
+            </tr>
+            <tr>
+                <td><p><h4>Achternaam</h4><input id = "achternaam" name = "achternaam" type = "text"></p></td>
+                <td><p><h4>Voornaam</h4><input id = "voornaam" name = "voornaam" type = "text"></p></td>
+               
+            </tr>
+            <tr>
+                <td><p id = "geboortedatum"><h4>Geboortedatum</h4>
+                    <p><input id = "geboortedag" name = "geboortedag" type = "text" size="2" placeholder="0"></input></p> -
+                    <p><input id = "geboortemaand" name = "geboortemaand" type = "text" size="2" placeholder="0"></input></p> -                    
+                    <p><input id = "geboortejaar" name = "geboortejaar" type = "text" size="4" placeholder="1980"></input></p></p>
+                </td>
+            </tr>
+               <tr>
+                <td><p><h4>Emailadres</h4><input id = "emailadres" name = "emailadres" type = "text"></p></td>
+                <td><p><h4>Telefoonnummer</h4><input id = "telefoonnummer" name = "telefoonnummer" type = "text"></p></td>
+               
+            </tr>
+               <tr>
+               
+                <td><p><h4>Operatie</h4><input  id = "pre" type="radio" value = "Pre" name = "Operatie">Pre</input>
+                <input id = "post" type = "radio" value = "Post" name = "Operatie">Post</input></p></td>
+            </tr>
+         
+            
+        </table>
+        <input id = "opslaan" name="opslaan" type = "submit" value="Opslaan"></input>
+        </form>
+        <form id="tokenteruggave" method= "get" action="addpatientservlet">
+         <table>\n" +
+"            <tr>\n" +
+"                <td><p><h4>Token</h4><input id = \"token\" value= "+ token.getTokens(identificatienummer)+" name = \"token\" type = \"text\"></p></td>\n" +
+"            </tr>\n" +        
+"        </table>\n" +
+"      
+            
+        </form>
+        </div>
+             <div id = "einde">
+              </div>
+    </body>
+</html>
